@@ -100,8 +100,8 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // DOMが完全にロードされた後でイベントリスナーを追加
     document.addEventListener('DOMContentLoaded', function() {
+      // モーダル内の同意ボタン
       var agreeButton = document.getElementById('agreeButton');
       if (agreeButton) {
         agreeButton.addEventListener('click', function(e) {
@@ -113,8 +113,16 @@
           }
         });
       } else {
-        console.error('agreeButton element not found');
+        console.error('agreeButton element not found in modal');
       }
+      // モーダル外のボタンにも対応
+      var joinButtons = document.querySelectorAll('[data-bs-target="#termsModal"]');
+      joinButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          var modal = new bootstrap.Modal(document.getElementById('termsModal'));
+          modal.show();
+        });
+      });
     });
   </script>
 </body>
