@@ -13,6 +13,7 @@
     .beta-btn { font-size: 1.1em; padding: 10px 20px; }
     footer { background: #f8f9fa; padding: 20px 0; text-align: center; }
     .terms-modal .modal-body { max-height: 300px; overflow-y: auto; font-size: 14px; }
+    .youtube-banner { max-width: 100%; height: auto; max-height: 150px; margin: 10px 0; }
     /* スマホ対応 */
     @media (max-width: 768px) {
       .hero { padding: 30px 0; }
@@ -22,6 +23,7 @@
       .beta-btn { font-size: 1em; padding: 8px 16px; }
       .modal-dialog { margin: 10px; }
       .modal-content { width: 100%; }
+      .youtube-banner { max-height: 100px; }
     }
   </style>
 </head>
@@ -32,6 +34,10 @@
       <h1 class="display-4">読むトラ by L.a.F</h1>
       <p class="lead">トランペット初心者向け基礎訓練アプリ、β版を先行体験！</p>
       <p class="text-warning"><small>※今回のβ版テストはAndroidのみ対象です</small></p>
+      <a href="https://www.youtube.com/@trumpet-labo_ratory" target="_blank">
+        <img src="bannar_youtube.png" class="youtube-banner" alt="新山泰規 YouTubeバナー">
+      </a>
+      <p class="mt-2"><small>監修者: 新山泰規（ニイヤマッスル）先生</small></p>
       <button class="btn btn-warning beta-btn mt-3" data-bs-toggle="modal" data-bs-target="#termsModal">今すぐβ版に参加</button>
     </div>
   </header>
