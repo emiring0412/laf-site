@@ -131,33 +131,40 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var modalElement = document.getElementById('termsModal');
-      if (!modalElement) {
-        console.error('termsModal element not found in DOM');
-        return; // モーダルがない場合は処理を中止
-      }
-      var joinButtons = document.querySelectorAll('[data-bs-target="#termsModal"]');
-      joinButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-          var modal = new bootstrap.Modal(modalElement);
-          modal.show();
-        });
+  document.addEventListener('DOMContentLoaded', function() {
+    var modalElement = document.getElementById('termsModal');
+    if (!modalElement) {
+      console.error('termsModal element not found in DOM');
+      return;
+    }
+    var modal = new bootstrap.Modal(modalElement);
+    var joinButtons = document.querySelectorAll('[data-bs-target="#termsModal"]');
+    joinButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        modal.show();
       });
-      var agreeButton = document.querySelector('#termsModal [id="agreeButton"]');
-      if (agreeButton) {
-        agreeButton.addEventListener('click', function(e) {
-          e.preventDefault();
-          if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-            alert('読むトラβ版はAndroidのみ対象です。iOS版は後日TestFlightで提供予定です。');
-          } else {
-            window.location.href = 'laf-beta.apk'; // APK用意後有効
-          }
-        });
-      } else {
-        console.error('agreeButton element not found in modal');
-      }
     });
-  </script>
+    var agreeButton = document.querySelector('#termsModal [id="agreeButton"]');
+    if (agreeButton) {
+      agreeButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+          alert('読むトラβ版はAndroidのみ対象です。iOS版は後日TestFlightで提供予定です。');
+        } else {
+          window.location.href = 'laf-beta.apk';
+        }
+        modal.hide(); // 同意後もモーダルを閉じる
+      });
+    } else {
+      console.error('agreeButton element not found in modal');
+    }
+    var dismissButton = document.querySelector('#termsModal [data-bs-dismiss="modal"]');
+    if (dismissButton) {
+      dismissButton.addEventListener('click', function() {
+        modal.hide(); // 同意しないも明示的に閉じる
+      });
+    }
+  });
+</script>
 </body>
 </html>
