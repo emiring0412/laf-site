@@ -15,6 +15,7 @@
     footer { background: #f8f9fa; padding: 20px 0; text-align: center; }
     .terms-modal .modal-body { max-height: 300px; overflow-y: auto; font-size: 14px; }
     .youtube-banner { max-width: 100%; height: auto; max-height: 150px; margin: 10px 0; }
+    .youtube-section { padding: 20px 0; background: #E0ECE3; text-align: center; }
     /* スマホ対応 */
     @media (max-width: 768px) {
       .hero { padding: 30px 0; }
@@ -25,6 +26,7 @@
       .modal-dialog { margin: 10px; }
       .modal-content { width: 100%; }
       .youtube-banner { max-height: 100px; }
+      .youtube-section { padding: 10px 0; }
     }
   </style>
 </head>
@@ -35,10 +37,6 @@
       <h1 class="display-4">読むトラ by L.a.F</h1>
       <p class="lead">トランペット初心者向け基礎訓練アプリ、β版を先行体験！</p>
       <p class="text-warning"><small>※今回のβ版テストはAndroidのみ対象です</small></p>
-      <a href="https://www.youtube.com/@trumpet-labo_ratory" target="_blank">
-        <img src="bannar_youtube.png" class="youtube-banner" alt="新山泰規 YouTubeバナー">
-      </a>
-      <p class="mt-2"><small>監修者: 新山泰規（ニイヤマッスル）先生</small></p>
       <button class="btn btn-warning beta-btn mt-3" data-bs-toggle="modal" data-bs-target="#termsModal">今すぐβ版に参加</button>
     </div>
   </header>
@@ -82,36 +80,15 @@
     </div>
   </section>
 
-  <!-- 利用規約モーダル -->
-  <div class="modal fade terms-modal" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="termsModalLabel">読むトラ β版利用規約</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p><strong>最終改訂日: 2025年6月26日</strong></p>
-          <p>本利用規約（以下「本規約」）は、読むトラ（以下「当アプリ」）のβ版を利用するテスター（以下「ユーザー」）と、L.a.F（以下「当方」）との間の利用条件を定めるものです。...</p>
-          <p>1. <strong>β版の目的</strong><br>読むトラは、トランペット初心者向けの基礎訓練をサポートすることを目指すアプリです。本β版は、正式リリース前の試験運用を目的として提供されます。...</p>
-          <p>2. <strong>β版の特性</strong><br>β版は開発中のソフトウェアであり、不具合、機能制限、データ損失の可能性があります。...</p>
-          <p>3. <strong>利用条件</strong><br>ユーザーは、β版を個人的、非営利的な目的でのみ利用できます。...</p>
-          <p>4. <strong>フィードバック</strong><br>ユーザーは、β版の使用に関するフィードバック（バグ報告、提案など）を当方に提供する場合があります。...</p>
-          <p>5. <strong>データ収集</strong><br>β版は、アプリの改善を目的として、利用データ（使用頻度、クラッシュログなど）を収集する場合があります。...</p>
-          <p>6. <strong>責任の制限</strong><br>当方は、β版の利用により生じた損害（データ損失、デバイス障害、機会損失など）について、一切の責任を負いません。...</p>
-          <p>7. <strong>規約の変更</strong><br>当方は、必要に応じて本規約を改訂する場合があります。...</p>
-          <p>8. <strong>終了</strong><br>当方は、任意の時点でβ版の提供を終了または制限する場合があります。...</p>
-          <p>9. <strong>準拠法と管轄</strong><br>本規約は日本法に準拠します。...</p>
-          <p><strong>お問い合わせ:</strong><br>ご質問やフィードバックは、[support@laf.com]までご連絡ください。</p>
-          <p class="text-danger"><strong>※今回のβ版テストはAndroidのみ対象です。iOS版は後日提供予定です。</strong></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">同意しない</button>
-          <a href="#download" class="btn btn-primary" id="agreeButton">同意する</a>
-        </div>
-      </div>
+  <!-- YouTubeバナーセクション -->
+  <section class="youtube-section">
+    <div class="container">
+      <a href="https://www.youtube.com/@trumpet-labo_ratory" target="_blank">
+        <img src="bannar_youtube.png" class="youtube-banner" alt="新山泰規 YouTubeバナー">
+      </a>
+      <p class="mt-2"><small>監修者: 新山泰規（ニイヤマッスル）先生</small></p>
     </div>
-  </div>
+  </section>
 
   <!-- フッター -->
   <footer>
