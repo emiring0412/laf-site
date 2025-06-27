@@ -175,40 +175,40 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var modalElement = document.getElementById('termsModal');
-      if (!modalElement) {
-        console.error('termsModal element not found in DOM');
-        return;
-      }
-      var modal = new bootstrap.Modal(modalElement, { backdrop: 'static', keyboard: false });
-      var joinButtons = document.querySelectorAll('[data-bs-target="#termsModal"]');
-      joinButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-          modal.show();
-        });
-      });
-      var agreeButton = document.querySelector('#termsModal [id="agreeButton"]');
-      if (agreeButton) {
-        agreeButton.addEventListener('click', function(e) {
-          e.preventDefault();
-          if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-            alert('読むトラβ版はAndroidのみ対象です。iOS版は後日TestFlightで提供予定です。');
-          } else {
-            window.location.href = 'laf-beta.apk';
-          }
-          modal.hide();
-        });
-      } else {
-        console.error('agreeButton element not found in modal');
-      }
-      var dismissButtons = document.querySelectorAll('#termsModal [data-bs-dismiss="modal"]');
-      dismissButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-          modal.hide();
-        });
+  document.addEventListener('DOMContentLoaded', function() {
+    var modalElement = document.getElementById('termsModal');
+    if (!modalElement) {
+      console.error('termsModal element not found in DOM');
+      return;
+    }
+    var modal = new bootstrap.Modal(modalElement, { backdrop: 'static', keyboard: false });
+    var joinButtons = document.querySelectorAll('[data-bs-target="#termsModal"]');
+    joinButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        modal.show();
       });
     });
-  </script>
+    var agreeButton = document.querySelector('#termsModal [id="agreeButton"]');
+    if (agreeButton) {
+      agreeButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+          alert('読むトラβ版はAndroidのみ対象です。iOS版は後日TestFlightで提供予定です。');
+        } else {
+          window.location.href = 'app-release.apk'; // ここを変更
+        }
+        modal.hide();
+      });
+    } else {
+      console.error('agreeButton element not found in modal');
+    }
+    var dismissButtons = document.querySelectorAll('#termsModal [data-bs-dismiss="modal"]');
+    dismissButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        modal.hide();
+      });
+    });
+  });
+</script>
 </body>
 </html>
