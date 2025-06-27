@@ -1,0 +1,141 @@
+{
+  "scales": [
+    {
+      "scaleName": "D_major",
+      "notes": [
+        {
+          "fingering": "13",
+          "image_id": "note_03_g3",
+          "note_ag": "G3",
+          "note_name": "ソ3"
+        },
+        {
+          "fingering": "12",
+          "image_id": "note_04_a3",
+          "note_ag": "A3",
+          "note_name": "ラ3"
+        },
+        {
+          "fingering": "2",
+          "image_id": "note_05_b3",
+          "note_ag": "B3",
+          "note_name": "シ3"
+        },
+        {
+          "fingering": "0",
+          "image_id": "note_06_c4",
+          "note_ag": "C#4",
+          "note_name": "ド#4"
+        },
+        {
+          "fingering": "13",
+          "image_id": "note_07_d4",
+          "note_ag": "D4",
+          "note_name": "レ4"
+        },
+        {
+          "fingering": "12",
+          "image_id": "note_08_e4",
+          "note_ag": "E4",
+          "note_name": "ミ4"
+        },
+        {
+          "fingering": "1",
+          "image_id": "note_09_f4",
+          "note_ag": "F#4",
+          "note_name": "ファ#4"
+        },
+        {
+          "fingering": "0",
+          "image_id": "note_10_g4",
+          "note_ag": "G4",
+          "note_name": "ソ4"
+        },
+        {
+          "fingering": "12",
+          "image_id": "note_11_a4",
+          "note_ag": "A4",
+          "note_name": "ラ4"
+        },
+        {
+          "fingering": "2",
+          "image_id": "note_12_b4",
+          "note_ag": "B4",
+          "note_name": "シ4"
+        },
+        {
+          "fingering": "0",
+          "image_id": "note_13_c5",
+          "note_ag": "C#5",
+          "note_name": "ド#5"
+        },
+        {
+          "fingering": "1",
+          "image_id": "note_14_d5",
+          "note_ag": "D5",
+          "note_name": "レ5"
+        },
+        {
+          "fingering": "0",
+          "image_id": "note_15_e5",
+          "note_ag": "E5",
+          "note_name": "ミ5"
+        },
+        {
+          "fingering": "1",
+          "image_id": "note_16_f5",
+          "note_ag": "F#5",
+          "note_name": "ファ#5"
+        },
+        {
+          "fingering": "0",
+          "image_id": "note_17_g5",
+          "note_ag": "G5",
+          "note_name": "ソ5"
+        },
+        {
+          "fingering": "12",
+          "image_id": "note_18_a5",
+          "note_ag": "A5",
+          "note_name": "ラ5"
+        },
+        {
+          "fingering": "2",
+          "image_id": "note_19_b5",
+          "note_ag": "B5",
+          "note_name": "シ5"
+        },
+        {
+          "fingering": "0",
+          "image_id": "note_20_c6",
+          "note_ag": "C#6",
+          "note_name": "ド#6"
+        },
+        {
+          "fingering": "1",
+          "image_id": "note_21_d6",
+          "note_ag": "D6",
+          "note_name": "レ6"
+        },
+        {
+          "fingering": "0",
+          "image_id": "note_22_e6",
+          "note_ag": "E6",
+          "note_name": "ミ6"
+        },
+        {
+          "fingering": "1",
+          "image_id": "note_23_f6",
+          "note_ag": "F#6",
+          "note_name": "ファ#6"
+        },
+        {
+          "fingering": "0",
+          "image_id": "note_24_g6",
+          "note_ag": "G6",
+          "note_name": "ソ6"
+        }
+      ]
+    }
+  ]
+}
