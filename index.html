@@ -93,43 +93,7 @@
     </div>
   </section>
 
-  <!-- 更新履歴セクション -->
-  <section class="update-section">
-    <div class="container">
-      <h2 class="text-center mb-4">更新履歴</h2>
-      <div class="update-container">
-        <table class="update-table">
-          <tbody>
-            <tr>
-              <td>--6/27更新 アプリverアップ--</td>
-              <td>
-                <p>最新版ver.1.4.1を更新しました。<br>
-                現在ご利用いただいているアプリ内のお知らせ欄上部から 現在のver.を確認できますので<br>
-                ver.1.4.1でない方は再度DLお願いいたします。</p>
-                <p>以下修正内容</p>
-                <ul>
-                  <li>初回起動時の利用規約が表示されるようになりました。</li>
-                  <li>プロフィール サーバー周りの調整をしました。</li>
-                  <li>リズム問題の基礎問題を選択制に変更しました。</li>
-                  <li>リズム問題のビープ音の調整をしました。</li>
-                  <li>アプリ起動時にアニメーションを導入しました。</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>--6/27更新 HPの調整--</td>
-              <td>
-                <ul>
-                  <li>タイトルロゴを追加しました</li>
-                  <li>更新お知らせ欄をついかしました</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
+ 
 
   <!-- 利用規約セクション -->
   <section class="section bg-light">
@@ -144,7 +108,55 @@
       </ul>
       <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#termsModal">β版利用規約の詳細</button>
     </div>
-  </section>
+  </section><!-- 更新履歴セクション -->
+<section class="update-section">
+    <div class="container">
+        <h2 class="text-center mb-4">更新履歴</h2>
+        <div class="update-container">
+            <table class="update-table">
+                <tbody>
+                    <tr>
+                        <td>--6/28更新 アプリverアップ--</td>
+                        <td>
+                            <p>最新版ver.1.4.2を更新しました。<br>
+                            現在ご利用いただいているアプリ内のお知らせ欄上部から 現在のver.を確認できますので<br>
+                            ver.1.4.2でない方は再度DLお願いいたします。</p>
+                            <p>以下修正内容</p>
+                            <ul>
+                                <li>メイン画面のレイアウト調整をしました。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>--6/27更新 アプリverアップ--</td>
+                        <td>
+                            <p>最新版ver.1.4.1を更新しました。<br>
+                            現在ご利用いただいているアプリ内のお知らせ欄上部から 現在のver.を確認できますので<br>
+                            ver.1.4.1でない方は再度DLお願いいたします。</p>
+                            <p>以下修正内容</p>
+                            <ul>
+                                <li>初回起動時の利用規約が表示されるようになりました。</li>
+                                <li>プロフィール サーバー周りの調整をしました。</li>
+                                <li>リズム問題の基礎問題を選択制に変更しました。</li>
+                                <li>リズム問題のビープ音の調整をしました。</li>
+                                <li>アプリ起動時にアニメーションを導入しました。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>--6/27更新 HPの調整--</td>
+                        <td>
+                            <ul>
+                                <li>タイトルロゴを追加しました</li>
+                                <li>更新お知らせ欄を追加しました</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
 
   <!-- YouTubeバナーセクション -->
   <section class="youtube-section">
@@ -255,7 +267,7 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('読むトラβ版はAndroidのみ対象です。iOS版は後日TestFlightで提供予定です。');
         modal.hide();
       } else {
-        window.location.href = 'app-release-1-4-1.apk';
+        window.location.href = 'app-release-1-4-2.apk';
         // APKダウンロード中はモーダルを閉じる
         setTimeout(() => modal.hide(), 100); // ダウンロード開始後に少し待って閉じる
       }
