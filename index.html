@@ -19,7 +19,7 @@
     .beta-btn { font-size: 1.1em; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; }
     .beta-btn:hover { background-color: #45a049; }
     footer { background: #f8f9fa; padding: 20px 0; text-align: center; }
-    .terms-modal .modal-body { max-height: 300px; overflow-y: auto; font-size: 14px; }
+    .terms-modal .modal-body, .privacy-modal .modal-body { max-height: 300px; overflow-y: auto; font-size: 14px; }
     .youtube-banner { max-width: 100%; height: auto; max-height: 150px; margin: 10px 0; }
     .youtube-section { padding: 20px 0; background: #E0ECE3; text-align: center; }
     .logo-img { max-width: 200px; height: auto; vertical-align: middle; margin-right: 10px; }
@@ -35,7 +35,6 @@
     .laf-about-content { max-width: 600px; margin: 0 auto; font-size: 1.1em; line-height: 1.8; color: #333; }
     .laf-about-content p { margin: 15px 0; }
     .laf-about-content p:first-child { font-weight: bold; }
-    /* スマホ対応 */
     @media (max-width: 768px) {
       .hero { padding: 30px 0; }
       .section { padding: 20px 0; }
@@ -93,8 +92,6 @@
     </div>
   </section>
 
- 
-
   <!-- 利用規約セクション -->
   <section class="section bg-light">
     <div class="container">
@@ -107,110 +104,22 @@
         <li><strong>※今回のβ版テストはAndroidのみ対象です。</strong></li>
       </ul>
       <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#termsModal">β版利用規約の詳細</button>
+      <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#privacyModal">プライバシーポリシーの詳細</button>
     </div>
-  </section><section class="update-section">
-    <div class="container">
-        <h2 class="text-center mb-4">更新履歴</h2>
-        <div class="update-container">
-            <table class="update-table">
-                <tbody>
-                    <tr>
-                        <td>--7/2更新 アプリverアップ--</td>
-                        <td>
-                            <p>最新版ver.1.4.6を更新しました。<br>
-                            現在ご利用いただいているアプリ内のお知らせ欄上部から 現在のver.を確認できますので<br>
-                            ver.1.4.6でない方は再度DLお願いいたします。</p>
-                            <p>以下修正内容</p>
-                            <ul>
-                                <li>リズム練習動作確認モードの修正を行いました。</li>
-                                <li>ユーザー画面の自分の最終ログイン情報を削除しました。</li>
-                                <li>プロフィールアイコンを透過なしに変更しました。</li>
-                                <li>楽譜ウォーターマークを選択式に変更しました。</li>
-                                <li>譜読み問題の初期設定をドレミに変更しました。</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>--7/1更新 アプリverアップ--</td>
-                        <td>
-                            <p>最新版ver.1.4.5を更新しました。<br>
-                            現在ご利用いただいているアプリ内のお知らせ欄上部から 現在のver.を確認できますので<br>
-                            ver.1.4.5でない方は再度DLお願いいたします。</p>
-                            <p>以下修正内容</p>
-                            <ul>
-                                <li>リズム練習のテストバージョンを追加しました。</li>
-                                <li>特に音声の乱れがあった方は、テストバージョンをお試しいただき、ご確認のほどお願いいたします。</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>--6/30更新 アプリverアップ--</td>
-                        <td>
-                            <p>最新版ver.1.4.4を更新しました。<br>
-                            現在ご利用いただいているアプリ内のお知らせ欄上部から 現在のver.を確認できますので<br>
-                            ver.1.4.4でない方は再度DLお願いいたします。</p>
-                            <p>以下修正内容</p>
-                            <ul>
-                                <li>リズム練習モードの音声の調整を行いました。ver.1.4.3で不具合が出ていた方、ご確認のほどお願いいたします。</li>
-                                <li>メイン画面の表示の修正を行いました。</li>
-                                <li>譜読み練習の広告の位置の調整を行いました。</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>--6/28-10:07更新 アプリverアップ--</td>
-                        <td>
-                            <p>最新版ver.1.4.3を更新しました。<br>
-                            現在ご利用いただいているアプリ内のお知らせ欄上部から 現在のver.を確認できますので<br>
-                            ver.1.4.3でない方は再度DLお願いいたします。</p>
-                            <p>以下修正内容</p>
-                            <ul>
-                                <li>メイン画面をさらに調整しました。</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>--6/28更新 アプリverアップ--</td>
-                        <td>
-                            <p>最新版ver.1.4.2を更新しました。<br>
-                            現在ご利用いただいているアプリ内のお知らせ欄上部から 現在のver.を確認できますので<br>
-                            ver.1.4.2でない方は再度DLお願いいたします。</p>
-                            <p>以下修正内容</p>
-                            <ul>
-                                <li>メイン画面のレイアウト調整をしました。</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>--6/27更新 アプリverアップ--</td>
-                        <td>
-                            <p>最新版ver.1.4.1を更新しました。<br>
-                            現在ご利用いただいているアプリ内のお知らせ欄上部から 現在のver.を確認できますので<br>
-                            ver.1.4.1でない方は再度DLお願いいたします。</p>
-                            <p>以下修正内容</p>
-                            <ul>
-                                <li>初回起動時の利用規約が表示されるようになりました。</li>
-                                <li>プロフィール サーバー周りの調整をしました。</li>
-                                <li>リズム問題の基礎問題を選択制に変更しました。</li>
-                                <li>リズム問題のビープ音の調整をしました。</li>
-                                <li>アプリ起動時にアニメーションを導入しました。</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>--6/27更新 HPの調整--</td>
-                        <td>
-                            <ul>
-                                <li>タイトルロゴを追加しました</li>
-                                <li>更新お知らせ欄を追加しました</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+  </section>
+
+  <!-- 更新履歴セクション -->
+<section class="update-section">
+  <div class="container">
+    <h2 class="text-center mb-4">更新履歴</h2>
+    <div class="update-container" id="updateContainer">
+      <table class="update-table" id="updateTable">
+        <tbody></tbody>
+      </table>
     </div>
+  </div>
 </section>
+
   <!-- YouTubeバナーセクション -->
   <section class="youtube-section">
     <div class="container">
@@ -248,67 +157,139 @@
   <!-- フッター -->
   <footer>
     <div class="container">
-      <p>© 2025 L.a.F. All Rights Reserved.</p>
+      <p>© 2025 L.a.F. All Rights Reserved. | 
+        <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">利用規約</a> | 
+        <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">プライバシーポリシー</a>
+      </p>
     </div>
   </footer>
 
-  <!-- 利用規約モーダル -->
   <div class="modal fade terms-modal" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="termsModalLabel">読むトラ β版利用規約</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p><strong>最終改訂日: 2025年6月26日</strong></p>
-          <p>本利用規約（以下「本規約」）は、読むトラ（以下「当アプリ」）のβ版を利用するテスター（以下「ユーザー」）と、L.a.F（以下「当方」）との間の利用条件を定めるものです。...</p>
-          <p>1. <strong>β版の目的</strong><br>読むトラは、トランペット初心者向けの基礎訓練をサポートすることを目指すアプリです。本β版は、正式リリース前の試験運用を目的として提供されます。...</p>
-          <p>2. <strong>β版の特性</strong><br>β版は開発中のソフトウェアであり、不具合、機能制限、データ損失の可能性があります。...</p>
-          <p>3. <strong>利用条件</strong><br>ユーザーは、β版を個人的、非営利的な目的でのみ利用できます。...</p>
-          <p>4. <strong>フィードバック</strong><br>ユーザーは、β版の使用に関するフィードバック（バグ報告、提案など）を当方に提供する場合があります。...</p>
-          <p>5. <strong>データ収集</strong><br>β版は、アプリの改善を目的として、利用データ（使用頻度、クラッシュログなど）を収集する場合があります。...</p>
-          <p>6. <strong>責任の制限</strong><br>当方は、β版の利用により生じた損害（データ損失、デバイス障害、機会損失など）について、一切の責任を負いません。...</p>
-          <p>7. <strong>規約の変更</strong><br>当方は、必要に応じて本規約を改訂する場合があります。...</p>
-          <p>8. <strong>終了</strong><br>当方は、任意の時点でβ版の提供を終了または制限する場合があります。...</p>
-          <p>9. <strong>準拠法と管轄</strong><br>本規約は日本法に準拠します。...</p>
-          <p><strong>お問い合わせ:</strong><br>ご質問やフィードバックは、[support@laf.com]までご連絡ください。</p>
-          <p class="text-danger"><strong>※今回のβ版テストはAndroidのみ対象です。iOS版は後日提供予定です。</strong></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">同意しない</button>
-          <a href="#download" class="btn btn-primary" id="agreeButton">同意する</a>
-        </div>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="termsModalLabel">読むトラ β版利用規約</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="termsContent">
+        <p><strong>最終改訂日: <span id="termsLastUpdated"></span></strong></p>
+        <!-- ここにJSONから動的にコンテンツを挿入 -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">同意しない</button>
+        <a href="#download" class="btn btn-primary" id="agreeButton">同意する</a>
       </div>
     </div>
   </div>
+</div>
+
+  <div class="modal fade privacy-modal" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="privacyModalLabel">読むトラ プライバシーポリシー</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="privacyContent">
+        <p><strong>最終改訂日: <span id="privacyLastUpdated"></span></strong></p>
+        <!-- ここにJSONから動的にコンテンツを挿入 -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var modalElement = document.getElementById('termsModal');
-  if (!modalElement) {
-    console.error('termsModal element not found in DOM');
-    return;
-  }
-  var modal = new bootstrap.Modal(modalElement, { backdrop: 'static', keyboard: false });
-  
-  // モーダルが閉じた後にbackdropを確実に削除
-  modalElement.addEventListener('hidden.bs.modal', function () {
+  document.addEventListener('DOMContentLoaded', function() {
+  // 既存のモーダル初期化コードはそのまま
+  var termsModalElement = document.getElementById('termsModal');
+  var termsModal = new bootstrap.Modal(termsModalElement, { backdrop: 'static', keyboard: false });
+  var privacyModalElement = document.getElementById('privacyModal');
+  var privacyModal = new bootstrap.Modal(privacyModalElement, { backdrop: 'static', keyboard: false });
+
+  // モーダルbackdropのクリア関数（既存）
+  function clearModalBackdrop() {
     document.querySelectorAll('.modal-backdrop').forEach(function(backdrop) {
       backdrop.remove();
     });
     document.body.classList.remove('modal-open');
     document.body.style = '';
-    console.log('Modal closed, backdrop removed');
-  });
+  }
 
+  termsModalElement.addEventListener('hidden.bs.modal', clearModalBackdrop);
+  privacyModalElement.addEventListener('hidden.bs.modal', clearModalBackdrop);
+
+  // 利用規約のJSON読み込み
+  fetch('terms.json')
+    .then(response => {
+      if (!response.ok) throw new Error('利用規約の読み込みに失敗しました');
+      return response.json();
+    })
+    .then(data => {
+      const termsContent = document.getElementById('termsContent');
+      const termsLastUpdated = document.getElementById('termsLastUpdated');
+      if (!termsContent || !termsLastUpdated) {
+        console.error('Terms content elements not found');
+        return;
+      }
+      termsLastUpdated.textContent = data.lastUpdated;
+      data.content.forEach(section => {
+        const sectionDiv = document.createElement('div');
+        sectionDiv.innerHTML = `<strong>${section.section}</strong><p>${section.text}</p>`;
+        termsContent.appendChild(sectionDiv);
+      });
+    })
+    .catch(error => {
+      console.error('利用規約の読み込みエラー:', error);
+      const termsContent = document.getElementById('termsContent');
+      if (termsContent) {
+        termsContent.innerHTML += '<p class="text-danger">利用規約の読み込みに失敗しました。</p>';
+      }
+    });
+
+  // プライバシーポリシーのJSON読み込み
+  fetch('privacy.json')
+    .then(response => {
+      if (!response.ok) throw new Error('プライバシーポリシーの読み込みに失敗しました');
+      return response.json();
+    })
+    .then(data => {
+      const privacyContent = document.getElementById('privacyContent');
+      const privacyLastUpdated = document.getElementById('privacyLastUpdated');
+      if (!privacyContent || !privacyLastUpdated) {
+        console.error('Privacy content elements not found');
+        return;
+      }
+      privacyLastUpdated.textContent = data.lastUpdated;
+      data.content.forEach(section => {
+        const sectionDiv = document.createElement('div');
+        sectionDiv.innerHTML = `<strong>${section.section}</strong><p>${section.text}</p>`;
+        privacyContent.appendChild(sectionDiv);
+      });
+    })
+    .catch(error => {
+      console.error('プライバシーポリシーの読み込みエラー:', error);
+      const privacyContent = document.getElementById('privacyContent');
+      if (privacyContent) {
+        privacyContent.innerHTML += '<p class="text-danger">プライバシーポリシーの読み込みに失敗しました。</p>';
+      }
+    });
+
+  // 既存のボタンイベントリスナー（「β版に参加する」など）はそのまま
   var joinButtons = document.querySelectorAll('[data-bs-target="#termsModal"]');
   joinButtons.forEach(function(button) {
     button.addEventListener('click', function() {
-      modal.show();
+      termsModal.show();
+    });
+  });
+
+  var privacyButtons = document.querySelectorAll('[data-bs-target="#privacyModal"]');
+  privacyButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      privacyModal.show();
     });
   });
 
@@ -318,28 +299,64 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
         alert('読むトラβ版はAndroidのみ対象です。iOS版は後日TestFlightで提供予定です。');
-        modal.hide();
+        termsModal.hide();
       } else {
         window.location.href = 'app-release-1-4-6.apk';
-//
-//
-//
-//
-//
-        // APKダウンロード中はモーダルを閉じる
-        setTimeout(() => modal.hide(), 100); // ダウンロード開始後に少し待って閉じる
+        setTimeout(() => termsModal.hide(), 100);
       }
     });
-  } else {
-    console.error('agreeButton element not found in modal');
   }
 
-  var dismissButtons = document.querySelectorAll('#termsModal [data-bs-dismiss="modal"]');
+  var dismissButtons = document.querySelectorAll('.modal [data-bs-dismiss="modal"]');
   dismissButtons.forEach(function(button) {
     button.addEventListener('click', function() {
-      modal.hide();
+      termsModal.hide();
+      privacyModal.hide();
     });
   });
+
+  // 既存の更新履歴のコードはそのまま
+  fetch('updates.json')
+    .then(response => {
+      if (!response.ok) throw new Error('JSONファイルの読み込みに失敗しました');
+      return response.json();
+    })
+    .then(data => {
+      const tbody = document.querySelector('#updateTable tbody');
+      if (!tbody) {
+        console.error('Update table tbody not found');
+        return;
+      }
+      data.forEach(update => {
+        const tr = document.createElement('tr');
+        const dateTd = document.createElement('td');
+        dateTd.textContent = `${update.date} 更新 アプリver.${update.version}`;
+        const contentTd = document.createElement('td');
+        const descriptionP = document.createElement('p');
+        descriptionP.innerHTML = update.description.replace(/\n/g, '<br>');
+        const changesTitle = document.createElement('p');
+        changesTitle.textContent = '以下修正内容';
+        const changesUl = document.createElement('ul');
+        update.changes.forEach(change => {
+          const li = document.createElement('li');
+          li.textContent = change;
+          changesUl.appendChild(li);
+        });
+        contentTd.appendChild(descriptionP);
+        contentTd.appendChild(changesTitle);
+        contentTd.appendChild(changesUl);
+        tr.appendChild(dateTd);
+        tr.appendChild(contentTd);
+        tbody.appendChild(tr);
+      });
+    })
+    .catch(error => {
+      console.error('更新履歴の読み込みエラー:', error);
+      const container = document.getElementById('updateContainer');
+      if (container) {
+        container.innerHTML = '<p class="text-danger">更新履歴の読み込みに失敗しました。</p>';
+      }
+    });
 });
 </script>
 </body>
